@@ -50,12 +50,10 @@ while True:
         latestData = steam.users.get_user_friends_list(idQuery)
         print(latestData)
         print("")
-
+    else:
+      print("Error: Unknown Command, type 'help' for help!")
    except ValueError:
      print(f"Value error: {Exception}")
    except TimeoutError:
      print(f"Timeout: {Exception}")
 
-#test = steam.users.search_user("untaco")
-
-#print(test)
